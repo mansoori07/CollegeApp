@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StaffPanel">
+    tools:context=".StudentPanel">
     <FrameLayout
-        android:id="@+id/fragment_containerstaff"
+        android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/bottom_barStaff"/>
+        android:layout_above="@id/bottom_bar"/>
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_barStaff"
+        android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:menu="@menu/bottom_barstaff"
+        app:menu="@menu/bottom_bar"
         android:background="?android:attr/windowBackground"/>
 
 </RelativeLayout>
