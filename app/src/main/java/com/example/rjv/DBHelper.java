@@ -82,11 +82,11 @@ public class DBHelper extends SQLiteOpenHelper {
         String[] selectionArgs = {email};
 
         Cursor cursor = db.query(TABLE_USER, //Table to query
-                columns,                    //columns to return
-                selection,                  //columns for the WHERE clause
-                selectionArgs,              //The values for the WHERE clause
+                columns,                     //columns to return
+                selection,                   //columns for the WHERE clause
+                selectionArgs,               //The values for the WHERE clause
                 null,                       //group the rows
-                null,                      //filter by row groups
+                null,                       //filter by row groups
                 null);                      //The sort order
         int cursorCount = cursor.getCount();
         cursor.close();
